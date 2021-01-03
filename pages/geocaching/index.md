@@ -4,3 +4,5 @@
 <!-- tags: informationen, news -->
 <!-- description: Hier notiere ich Dinge zum Thema Geochaching. -->
 Hier könnte etwas zum Thema Geocaching stehen. 
+
+Auf dem ipad Änderungen gemacht.
