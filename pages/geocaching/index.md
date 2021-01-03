@@ -6,3 +6,5 @@
 Hier könnte etwas zum Thema Geocaching stehen. 
 
 Auf dem ipad Änderungen gemacht.
+
+Datei mit winem richtigen Editor öffnen wäre schön und Bilder einfügen fehlt noch ansonsten ist das schon recht nett.
