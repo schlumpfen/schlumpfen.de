@@ -5,6 +5,7 @@
 <!-- description: Eine Seite für meine Programmier Ideen-->
 Hier möchte ich Ideen aufzählen
 
-- bludit theme 
+- bludit theme
+- AoC
 
 
