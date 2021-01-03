@@ -9,3 +9,4 @@ Auf dem lokalen System angepasst.
 
 Versuch mit weiteren Kommentaren.
 
+Mit ios APP Änderungen gemacht und kommentiert.
