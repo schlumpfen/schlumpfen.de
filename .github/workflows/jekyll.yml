@@ -3,6 +3,12 @@ name: Build Jekyll Pages
 on:
   push:
     branches: ["main"]
+  
+  permissions:
+    contents: read
+    pages: write
+    id-token: write
+  
   workflow_dispatch:
 
 jobs:
