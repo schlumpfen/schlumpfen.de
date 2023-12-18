@@ -21,3 +21,7 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           verbose: true
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "./output"
