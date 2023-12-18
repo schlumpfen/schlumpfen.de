@@ -31,13 +31,7 @@ jobs:
     - name: Build Jekyll Site
       run: |
         bundle exec jekyll build
-#
-#    - name: Create _site Directory
-#      run: mkdir _site
-#
-#    - name: Copy Generated Files to _site
-#      run: cp -r _site/* ./_site
-#
+
     - name: Show all
       run: |
         tree . 
@@ -46,3 +40,18 @@ jobs:
       uses: EndBug/add-and-commit@v9
       with:
         default_author: github_actions
+        
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr --delete
+        path: _site/
+        remote_path: /var/www/virtual/${{ secrets.UBERSPACE_USER }}/schlumpfen.de/
+        remote_host: ${{ secrets.UBERSPACE_HOST }}
+        remote_user: ${{ secrets.UBERSPACE_USER }}
+        remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
