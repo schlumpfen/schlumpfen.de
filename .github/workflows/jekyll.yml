@@ -19,7 +19,9 @@ jobs:
         uses: actions/checkout@v3
       - name: Build
         uses: actions/jekyll-build-pages@v1
-      - name: Copy
+      - name: Upload/Copy
+        uses: actions/upload-artifact@v4
+      - name: Download/Copy
         uses: actions/download-artifact@v4
       - name: Display structure of downloaded files
         run: ls -R
