@@ -41,4 +41,5 @@ jobs:
         git config --local user.name "GitHub Actions"
         git add .
         git diff --quiet && git diff --staged --quiet || git commit -m "Build Jekyll site"
-        git push
+        git push https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/schlumpfen/schlumpfen.de.git HEAD:main
+        
