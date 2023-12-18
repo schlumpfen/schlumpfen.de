@@ -40,8 +40,6 @@ jobs:
 #
     - name: Commit and Push Changes
       run: |
-        git config --local user.email $GITHUB_ACTOR@users.noreply.github.com
-        git config --local user.name $GITHUB_TRIGGERING_ACTOR
         git add .
         git diff --quiet && git diff --staged --quiet || git commit -m "Build Jekyll site"
         git push https://$GITHUB_ACTOR:$YOUR_GENERATED_TOKEN@github.com/schlumpfen/schlumpfen.de.git HEAD:main
