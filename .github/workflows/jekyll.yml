@@ -28,13 +28,13 @@ jobs:
     - name: Build Jekyll Site
       run: |
         bundle exec jekyll build
-
-    - name: Create _site Directory
-      run: mkdir _site
-
-    - name: Copy Generated Files to _site
-      run: cp -r _site/* ./_site
-
+#
+#    - name: Create _site Directory
+#      run: mkdir _site
+#
+#    - name: Copy Generated Files to _site
+#      run: cp -r _site/* ./_site
+#
     - name: Commit and Push Changes
       run: |
         git config --local user.email "actions@github.com"
