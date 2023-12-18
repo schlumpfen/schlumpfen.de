@@ -41,3 +41,9 @@ jobs:
     - name: Commit and Push Changes
       run: |
         tree ./_site 
+        
+    - name: Upload
+    - uses: actions/upload-artifact@v4
+      with:
+        name: Webseiten
+        path: ./_site
