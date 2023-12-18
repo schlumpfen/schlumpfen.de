@@ -1,4 +1,4 @@
-name: Build Jekyll Pages
+name: Erstelle Jekyll Seiten
 
 on:
   workflow_dispatch:
@@ -40,4 +40,4 @@ jobs:
 #
     - name: Commit and Push Changes
       run: |
-        ls ./_site -lisa
+        tree ./_site 
