@@ -2,29 +2,43 @@ name: Build Jekyll Pages
 
 on:
   workflow_dispatch:
-
   push:
-    branches: ["main"]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    paths:
+      - '_config.yml'
+      - '**/*.md'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Build
-        uses: actions/jekyll-build-pages@v1
-      - name: Upload/Copy
-        uses: actions/upload-artifact@v4
-      - name: Download/Copy
-        uses: actions/download-artifact@v4
-      - name: Display structure of downloaded files
-        run: ls -R
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v2
+      with:
+        ruby-version: 2.7
 
-      
+    - name: Install Dependencies
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Build Jekyll Site
+      run: |
+        bundle exec jekyll build
+
+    - name: Create _site Directory
+      run: mkdir _site
+
+    - name: Copy Generated Files to _site
+      run: cp -r _site/* ./_site
+
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add .
+        git diff --quiet && git diff --staged --quiet || git commit -m "Build Jekyll site"
+        git push
