@@ -1,9 +1,8 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
-# About Seite
+Über mich:
 
-Hier sollte etwas über mich stehen.
+Hier sollte etwas über `mich` stehen.

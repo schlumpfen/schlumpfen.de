@@ -5,20 +5,32 @@
 # in the templates via {{ site.myvariable }}.
 
 title: schlumpfen.de
+author: Stefan Roschewitz
 email: stefan@roschewitz.de
 description: >- # this means to ignore newlines until "baseurl:"
   Web Seite von Stefan Roschewitz. Auf dieser Seite versuche
   ich verschiedene Dinge zu posten, die mir wichtig sind bzw. einfallen.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://schlumpfen.de" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  schlumpfen
+
+permalink: /:slug.html
+
+# favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
+goat_counter: "schlumpfen" # put your GoatCounter name if you want to use GoatCounter analytics
+
 
 theme: no-style-please
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: "<- Zurück" # customize text for homepage link in post layout
+  date_format: "%d.%m.%Y" # customize how date is formatted
+  show_description: false # show blog description in home page
+
+sass:
+  style: :compressed
 
 # Build settings
 plugins:
   - jekyll-feed
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
+  - jekyll-seo-tag
