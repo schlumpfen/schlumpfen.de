@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Los geht es"
-date:   2023-12-18 22:47:24 +0100
-categories: jekyll start
+title: "Start mit Jekyll"
+category: jekyll
 ---
 
 ## Es geht los mit Jekyll
