@@ -1,10 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
 
-# Test mit Jekyll
+# schlumpfen.de Webseite
 
-## Weiter geht es!
+Auf dieser Seite versuche ich alles einzufangen was mir gerade einfält und was ich so treibe.
