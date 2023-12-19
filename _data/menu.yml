@@ -22,7 +22,7 @@ entries:
       show_more_text: weitere Nachrichten...
       show_more_url: jekyll-archive.html
 
-    - title: another list
+  - title: another list
     entries:
       - title: with subitems
         entries:
