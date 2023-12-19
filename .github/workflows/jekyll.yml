@@ -30,7 +30,7 @@ jobs:
 
     - name: Build Jekyll Site
       run: |
-        bundle exec jekyll build
+        bundle exec jekyll build --trace
 
     - name: Show all
       run: |
