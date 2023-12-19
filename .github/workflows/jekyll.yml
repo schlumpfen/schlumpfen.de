@@ -34,7 +34,7 @@ jobs:
 
     - name: Show all
       run: |
-        tree . 
+        tree -D . 
         
     - name: Add and commit
       uses: EndBug/add-and-commit@v9
