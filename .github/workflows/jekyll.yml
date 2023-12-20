@@ -30,7 +30,8 @@ jobs:
 
     - name: Build Jekyll Site
       run: |
-        bundle exec JEKYLL_ENV=production jekyll build --trace
+        export JEKYLL_ENV=production
+        bundle exec jekyll build --trace
 
     - name: Show all
       run: |
