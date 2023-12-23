@@ -52,7 +52,13 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    # - uses: actions/checkout@v4
+    - name: Download arteact
+      uses: actions/aownload-artifact@v4
+      with:  
+        name: Webseiten
+        path: _site
+    
     - name: rsync deployments
       uses: burnett01/rsync-deployments@6.0.0
       with:
