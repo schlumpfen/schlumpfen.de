@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - '_config.yml'
       - '**/*.md'
+      - '**/*.yml'
 
 jobs:
   build:
