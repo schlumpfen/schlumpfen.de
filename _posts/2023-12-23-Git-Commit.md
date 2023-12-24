@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Jetzt mit VS Code"
-category: jekyll
+categories: 
+  - Jekyll
 ---
 
 ## Jetzt mit VS Code

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Test mit Artifakt"
-category: jekyll
+categories: 
+  - Jekyll
 ---
 
 ## Artifakte

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Test mit Jekyll"
-category: jekyll
+categories: 
+  - Jekyll
 ---
 
 ## Hallo

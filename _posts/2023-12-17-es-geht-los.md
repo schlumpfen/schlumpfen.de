@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Start mit Jekyll"
-category: jekyll
+categories: 
+  - Jekyll
 ---
 
 ## Es geht los mit Jekyll
