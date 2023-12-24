@@ -492,7 +492,7 @@ de: &DEFAULT_DE
   breadcrumb_home_label      : "Start"
   breadcrumb_separator       : "/"
   menu_label                 : "Menü ein-/ausschalten"
-  search_label               :
+  search_label               : "Suchen"
   toc_label                  : "Auf dieser Seite"
   ext_link_label             : "Direkter Link"
   less_than                  : "weniger als"
@@ -528,6 +528,7 @@ de: &DEFAULT_DE
   search_placeholder_text    : "Suchbegriff eingeben..."
   search_algolia_no_results  :
   results_found              : "Ergebnis(se) gefunden"
+  back_to_top                : "Nach oben"
 de-DE:
   <<: *DEFAULT_DE
 de-AT:
